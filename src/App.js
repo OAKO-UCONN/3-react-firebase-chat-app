@@ -1,5 +1,28 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+
+//Import Config file
+import apiKeysAndVars from './apiKeysAndVars'
+
+//Firebase Imports
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+
+//Import hooks
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useCollectionData } from 'react-firebase-hooks/firestore';
+
+
+firebase.initializeApp({
+
+})
+
+
+//Reference to auth and firestore as Global Variables.
+const auth = firebase.auth();
+const firestore = firebase.firestore();
+
 
 function App() {
   return (
