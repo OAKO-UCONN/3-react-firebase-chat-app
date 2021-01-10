@@ -1,6 +1,10 @@
-# Logs
+#ENV
 apiKeysAndVars.js
+.env.development
+.env.test
+.env.production
 
+# Logs
 logs
 *.log
 npm-debug.log*
